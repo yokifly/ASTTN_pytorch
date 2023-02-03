@@ -1,0 +1,157 @@
+New...
+K=8, L=1, batch_size=32, d=8, decay_epoch=20, ds='pems-bay', learning_rate=0.001, max_epoch=100, model='adp', model_file='./save/pems-bay_adp.pkl', num_his=12, num_pred=12, remark='', se_type='node2vec', test_ratio=0.2, time_slot=5, traffic_file='./data/pems-bay.h5', train_ratio=0.7, val_ratio=0.1, window=6
+loading data...
+trainX: torch.Size([36458, 12, 325])		 trainY: torch.Size([36458, 12, 325])
+valX:   torch.Size([5189, 12, 325])		valY:   torch.Size([5189, 12, 325])
+testX:   torch.Size([10400, 12, 325])		testY:   torch.Size([10400, 12, 325])
+mean:   62.7354		std:   9.4388
+data loaded!
+compiling model...
+trainable parameters: 158,995
+**** training model ****
+2022-11-15 01:45:41 | epoch: 0001/100, training time: 396.0s, inference time: 12.0s
+train loss: 2.1902, val_loss: 1.9160
+val loss decrease from inf to 1.9160, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.80		rmse 4.08		mape 4.23%
+2022-11-15 01:52:57 | epoch: 0002/100, training time: 398.4s, inference time: 12.0s
+train loss: 1.9156, val_loss: 1.8473
+val loss decrease from 1.9160 to 1.8473, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.76		rmse 3.90		mape 4.04%
+2022-11-15 02:00:11 | epoch: 0003/100, training time: 397.9s, inference time: 11.9s
+train loss: 1.8523, val_loss: 1.8250
+val loss decrease from 1.8473 to 1.8250, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.75		rmse 3.90		mape 3.87%
+2022-11-15 02:07:25 | epoch: 0004/100, training time: 397.1s, inference time: 11.9s
+train loss: 1.8205, val_loss: 1.8083
+val loss decrease from 1.8250 to 1.8083, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.75		rmse 3.90		mape 3.98%
+2022-11-15 02:14:39 | epoch: 0005/100, training time: 397.1s, inference time: 11.9s
+train loss: 1.7942, val_loss: 1.9366
+test             mae 1.83		rmse 4.17		mape 4.20%
+2022-11-15 02:21:52 | epoch: 0006/100, training time: 397.1s, inference time: 12.0s
+train loss: 1.7800, val_loss: 1.7250
+val loss decrease from 1.8083 to 1.7250, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.68		rmse 3.80		mape 3.78%
+2022-11-15 02:29:07 | epoch: 0007/100, training time: 397.8s, inference time: 11.9s
+train loss: 1.7717, val_loss: 1.7681
+test             mae 1.72		rmse 3.85		mape 3.95%
+2022-11-15 02:36:21 | epoch: 0008/100, training time: 397.2s, inference time: 11.9s
+train loss: 1.7484, val_loss: 1.7046
+val loss decrease from 1.7250 to 1.7046, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.67		rmse 3.75		mape 3.71%
+2022-11-15 02:43:35 | epoch: 0009/100, training time: 397.5s, inference time: 11.9s
+train loss: 1.7398, val_loss: 1.6643
+val loss decrease from 1.7046 to 1.6643, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.65		rmse 3.76		mape 3.84%
+2022-11-15 02:50:49 | epoch: 0010/100, training time: 397.3s, inference time: 12.0s
+train loss: 1.7339, val_loss: 1.6975
+test             mae 1.66		rmse 3.79		mape 3.90%
+2022-11-15 02:58:03 | epoch: 0011/100, training time: 397.3s, inference time: 12.0s
+train loss: 1.7336, val_loss: 1.7457
+test             mae 1.70		rmse 3.86		mape 4.10%
+2022-11-15 03:05:17 | epoch: 0012/100, training time: 397.2s, inference time: 12.0s
+train loss: 1.7172, val_loss: 1.6634
+val loss decrease from 1.6643 to 1.6634, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.64		rmse 3.72		mape 3.65%
+2022-11-15 03:12:31 | epoch: 0013/100, training time: 397.3s, inference time: 12.0s
+train loss: 1.7288, val_loss: 1.6833
+test             mae 1.68		rmse 3.82		mape 3.88%
+2022-11-15 03:19:43 | epoch: 0014/100, training time: 395.4s, inference time: 11.9s
+train loss: 1.7151, val_loss: 1.6723
+test             mae 1.66		rmse 3.72		mape 3.76%
+2022-11-15 03:26:54 | epoch: 0015/100, training time: 394.5s, inference time: 11.9s
+train loss: 1.7192, val_loss: 1.6711
+test             mae 1.63		rmse 3.71		mape 3.61%
+2022-11-15 03:34:06 | epoch: 0016/100, training time: 395.8s, inference time: 11.9s
+train loss: 1.6987, val_loss: 1.6453
+val loss decrease from 1.6634 to 1.6453, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.63		rmse 3.68		mape 3.67%
+2022-11-15 03:41:18 | epoch: 0017/100, training time: 395.5s, inference time: 11.9s
+train loss: 1.7050, val_loss: 1.6372
+val loss decrease from 1.6453 to 1.6372, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.60		rmse 3.66		mape 3.62%
+2022-11-15 03:48:29 | epoch: 0018/100, training time: 394.5s, inference time: 11.9s
+train loss: 1.7054, val_loss: 1.6661
+test             mae 1.64		rmse 3.71		mape 3.81%
+2022-11-15 03:55:41 | epoch: 0019/100, training time: 395.1s, inference time: 11.9s
+train loss: 1.6983, val_loss: 1.6650
+test             mae 1.62		rmse 3.70		mape 3.82%
+2022-11-15 04:02:53 | epoch: 0020/100, training time: 395.4s, inference time: 11.9s
+train loss: 1.6901, val_loss: 1.6292
+val loss decrease from 1.6372 to 1.6292, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.63		rmse 3.73		mape 3.68%
+2022-11-15 04:10:05 | epoch: 0021/100, training time: 395.9s, inference time: 11.9s
+train loss: 1.6920, val_loss: 1.6478
+test             mae 1.66		rmse 3.76		mape 3.64%
+2022-11-15 04:17:18 | epoch: 0022/100, training time: 396.7s, inference time: 11.9s
+train loss: 1.6872, val_loss: 1.6716
+test             mae 1.65		rmse 3.80		mape 3.71%
+2022-11-15 04:24:30 | epoch: 0023/100, training time: 395.1s, inference time: 11.9s
+train loss: 1.6933, val_loss: 1.6738
+test             mae 1.67		rmse 3.87		mape 3.66%
+2022-11-15 04:31:42 | epoch: 0024/100, training time: 395.5s, inference time: 11.9s
+train loss: 1.6811, val_loss: 1.6753
+test             mae 1.67		rmse 3.80		mape 3.77%
+2022-11-15 04:38:55 | epoch: 0025/100, training time: 396.0s, inference time: 11.9s
+train loss: 1.6841, val_loss: 1.7022
+test             mae 1.69		rmse 3.78		mape 4.04%
+2022-11-15 04:46:07 | epoch: 0026/100, training time: 395.5s, inference time: 11.9s
+train loss: 1.6759, val_loss: 1.7717
+test             mae 1.74		rmse 3.97		mape 3.89%
+2022-11-15 04:53:19 | epoch: 0027/100, training time: 395.5s, inference time: 11.9s
+train loss: 1.6818, val_loss: 1.6362
+test             mae 1.63		rmse 3.78		mape 3.78%
+2022-11-15 05:00:30 | epoch: 0028/100, training time: 394.8s, inference time: 11.9s
+train loss: 1.6779, val_loss: 1.6766
+test             mae 1.68		rmse 3.88		mape 3.73%
+2022-11-15 05:07:42 | epoch: 0029/100, training time: 395.5s, inference time: 11.9s
+train loss: 1.6747, val_loss: 1.9519
+test             mae 1.89		rmse 4.33		mape 4.28%
+2022-11-15 05:14:54 | epoch: 0030/100, training time: 395.9s, inference time: 11.9s
+train loss: 1.6744, val_loss: 1.6235
+val loss decrease from 1.6292 to 1.6235, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.61		rmse 3.69		mape 3.67%
+2022-11-15 05:22:05 | epoch: 0031/100, training time: 394.5s, inference time: 11.9s
+train loss: 1.6764, val_loss: 1.6979
+test             mae 1.67		rmse 3.82		mape 3.80%
+2022-11-15 05:29:18 | epoch: 0032/100, training time: 395.9s, inference time: 11.9s
+train loss: 1.6669, val_loss: 1.6382
+test             mae 1.65		rmse 3.78		mape 3.75%
+2022-11-15 05:36:30 | epoch: 0033/100, training time: 396.2s, inference time: 11.9s
+train loss: 1.6689, val_loss: 1.6379
+test             mae 1.63		rmse 3.75		mape 3.80%
+2022-11-15 05:43:42 | epoch: 0034/100, training time: 395.3s, inference time: 11.9s
+train loss: 1.6580, val_loss: 1.6296
+test             mae 1.63		rmse 3.72		mape 3.68%
+2022-11-15 05:50:53 | epoch: 0035/100, training time: 394.2s, inference time: 11.9s
+train loss: 1.6735, val_loss: 1.6665
+test             mae 1.67		rmse 3.84		mape 3.95%
+2022-11-15 05:58:04 | epoch: 0036/100, training time: 395.0s, inference time: 11.9s
+train loss: 1.6757, val_loss: 1.7428
+test             mae 1.70		rmse 3.93		mape 3.84%
+2022-11-15 06:05:15 | epoch: 0037/100, training time: 394.1s, inference time: 11.9s
+train loss: 1.6694, val_loss: 1.6347
+test             mae 1.62		rmse 3.74		mape 3.69%
+2022-11-15 06:12:25 | epoch: 0038/100, training time: 394.1s, inference time: 11.9s
+train loss: 1.6591, val_loss: 1.6526
+test             mae 1.63		rmse 3.74		mape 3.79%
+2022-11-15 06:19:36 | epoch: 0039/100, training time: 394.1s, inference time: 11.9s
+train loss: 1.6613, val_loss: 1.7910
+test             mae 1.77		rmse 4.09		mape 3.99%
+2022-11-15 06:26:47 | epoch: 0040/100, training time: 395.1s, inference time: 11.9s
+train loss: 1.6498, val_loss: 1.6185
+val loss decrease from 1.6235 to 1.6185, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.61		rmse 3.74		mape 3.73%
+2022-11-15 06:33:59 | epoch: 0041/100, training time: 395.1s, inference time: 11.9s
+train loss: 1.6439, val_loss: 1.6775
+test             mae 1.65		rmse 3.80		mape 3.94%
+2022-11-15 06:41:11 | epoch: 0042/100, training time: 395.2s, inference time: 11.9s
+train loss: 1.6488, val_loss: 1.6097
+val loss decrease from 1.6185 to 1.6097, saving model to ./save/pems-bay_adp.pkl
+test             mae 1.60		rmse 3.67		mape 3.64%
+2022-11-15 06:48:22 | epoch: 0043/100, training time: 394.3s, inference time: 11.9s
+train loss: 1.6528, val_loss: 1.6303
+test             mae 1.62		rmse 3.69		mape 3.66%
+2022-11-15 06:55:32 | epoch: 0044/100, training time: 393.8s, inference time: 11.9s
+train loss: 1.6306, val_loss: 1.6565
+test             mae 1.66		rmse 3.87		mape 3.76%
